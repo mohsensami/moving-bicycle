@@ -1,5 +1,5 @@
 .move {
-    animation: move 5s ease-out forwards;
+    animation: move 3s ease-out forwards;
 }
 @keyframes move {
     0% {
@@ -7,5 +7,16 @@
     }
     100% {
         transform: translate(650px, 150px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    @keyframes move {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(300px, 70px);
+        }
     }
 }
